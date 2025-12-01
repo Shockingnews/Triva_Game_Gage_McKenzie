@@ -11,15 +11,13 @@ namespace Trivia_Game_Gage_McKenzie
     {
         static int count;
         static bool trivia = true;
-        static List<string> questions = new List<string>() { "Question 1#: what is your name", "test" };
-        static List<string> answer = new List<string>() { "Gage", "tstanswer" };
+        static List<string> questions = new List<string>() { "Question 1#: what causes an infinty loop? ", "Question 2#: the most helpful code to use when making a map is?", "Question 3#: What's wrong with this code: static List<(string,stringstring,string)> playerAnswerChecker = new List<(stringstring,string,string)>();", "Question 4#: ", "Question 5#: ", "Question 6#: ", "Question 7#: ", "Question 8#: ", "Question 9#: ", "Question 10#: " };
+        static List<string> answer = new List<string>() { "while", "Textfile", "static List<(string,stringstring,string)> playerAnswerChecker = new List<(stringstring,string,string)>();" };
         static List<(string, string, string, string)> playerAnswerChecker = new List<(string, string, string, string)>();
-        static List<(string, string, string)> fakeAnswers = new List<(string, string, string)>() { ("Gabe", "Mason", "Colby"), ("test", "Mason", "Colby") };
+        static List<(string, string, string)> fakeAnswers = new List<(string, string, string)>() { ("for", "foreach", "if"), ("List", "Array", "none of the above"), ("static List<(stringstring,string,string)> playerAnswerChecker = new List<(string,string,string,string)>();", "static List<(string, string, string, string)> playerAnswerChecker = new List<(string,string,string,string)>();", "static List<(string, string, string, string)> playerAnswerChecker = new List<(string, string, string, string)>();") };
         static int score;
         static Random randomnum1 = new Random();
-        static Random randomnum2 = new Random();
-        static Random randomnum3 = new Random();
-        static Random randomnum4 = new Random();
+        
 
         static void Main(string[] args)
         {
@@ -42,17 +40,17 @@ namespace Trivia_Game_Gage_McKenzie
                     if (num == 2)
                     {
                         Console.WriteLine($"is it 1: {fakeAnswers[i].Item1}  is it 2: {answer[i]}  is it 3: {fakeAnswers[i].Item2}  is it 4: {fakeAnswers[i].Item3}");
-                        playerAnswerChecker.Add((fakeAnswers[i].Item1, answer[i], fakeAnswers[i].Item2, fakeAnswers[i].Item3));
+                        playerAnswerChecker.Add((fakeAnswers[i].Item2, answer[i], fakeAnswers[i].Item1, fakeAnswers[i].Item3));
                     }
                     if (num == 3)
                     {
                         Console.WriteLine($"is it 1: {fakeAnswers[i].Item1}  is it 2: {fakeAnswers[i].Item2}  is it 3: {answer[i]}  is it 4: {fakeAnswers[i].Item3}");
-                        playerAnswerChecker.Add((fakeAnswers[i].Item1, fakeAnswers[i].Item2, answer[i], fakeAnswers[i].Item3));
+                        playerAnswerChecker.Add((fakeAnswers[i].Item1, fakeAnswers[i].Item3, answer[i], fakeAnswers[i].Item2));
                     }
                     if (num == 4)
                     {
                         Console.WriteLine($"is it 1: {fakeAnswers[i].Item1}  is it 2: {fakeAnswers[i].Item2}  is it 3: {fakeAnswers[i].Item3}  is it 4: {answer[i]}");
-                        playerAnswerChecker.Add((fakeAnswers[i].Item1, fakeAnswers[i].Item2, fakeAnswers[i].Item3, answer[i]));
+                        playerAnswerChecker.Add((fakeAnswers[i].Item3, fakeAnswers[i].Item1, fakeAnswers[i].Item2, answer[i]));
                     }
 
 
@@ -149,7 +147,7 @@ namespace Trivia_Game_Gage_McKenzie
                     {
                         Console.WriteLine("try again");
                         Console.WriteLine("press any key to continue");
-
+                        playerAnswerChecker.Remove(playerAnswerChecker[0]);
                         Console.ReadKey(true);
                         Console.Clear();
                     }
