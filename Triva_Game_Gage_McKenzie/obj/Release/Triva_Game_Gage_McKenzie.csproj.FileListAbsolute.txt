@@ -1,0 +1,7 @@
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\bin\Release\Triva_Game_Gage_McKenzie.exe.config
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\bin\Release\Triva_Game_Gage_McKenzie.exe
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\bin\Release\Triva_Game_Gage_McKenzie.pdb
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\obj\Release\Triva_Game_Gage_McKenzie.csproj.AssemblyReference.cache
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\obj\Release\Triva_Game_Gage_McKenzie.csproj.CoreCompileInputs.cache
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\obj\Release\Triva_Game_Gage_McKenzie.exe
+C:\Users\mgc72\Documents\unity project\Triva_Game_Gage_McKenzie\Triva_Game_Gage_McKenzie\obj\Release\Triva_Game_Gage_McKenzie.pdb
